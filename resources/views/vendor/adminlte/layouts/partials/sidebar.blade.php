@@ -46,6 +46,13 @@
             >
                 <a href="{{ url('history-absensi') }}"><i class='fa fa-pencil'></i> <span>History Absensi</span></a>
             </li>
+            <li
+            @if($page == 'tasks')
+            {!! 'class="active"'!!}
+            @endif
+            >
+                <a href="{{ url('tasks') }}"><i class='fa fa-pencil'></i> <span>List Task</span></a>
+            </li>
             @endif
             <!-- <li
             @if($page == 'export')

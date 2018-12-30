@@ -78,6 +78,7 @@ History Absensi Pegawai
                         <th>NIP</th>
                         <th>Nama</th>
                         <th>Jabatan</th>
+                        <th>Pekerjaan</th>
                         <th>Tanggal</th>
                         <th>Pukul</th>
                       </tr>
@@ -89,6 +90,7 @@ History Absensi Pegawai
                         <td><?php echo e($d->nip); ?></td>
                         <td><?php echo e($d->employee->name); ?></td>
                         <td><?php echo e($d->employee->position->name); ?></td>
+                        <td><?php echo e($d->employee->pekerjaan); ?></td>
                         <td><?php echo e(App\Helpers\GeneralHelper::indonesianDateFormat($d->tanggal)); ?></td>
                         <td><?php echo e($d->pukul); ?></td>
                       </tr>

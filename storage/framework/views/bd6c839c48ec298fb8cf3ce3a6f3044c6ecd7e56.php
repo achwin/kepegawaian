@@ -49,6 +49,14 @@
             >
                 <a href="<?php echo e(url('history-absensi')); ?>"><i class='fa fa-pencil'></i> <span>History Absensi</span></a>
             </li>
+            <li
+            <?php if($page == 'tasks'): ?>
+            <?php echo 'class="active"'; ?>
+
+            <?php endif; ?>
+            >
+                <a href="<?php echo e(url('tasks')); ?>"><i class='fa fa-pencil'></i> <span>List Task</span></a>
+            </li>
             <?php endif; ?>
             <!-- <li
             <?php if($page == 'export'): ?>

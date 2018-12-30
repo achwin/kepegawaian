@@ -46,6 +46,11 @@ Route::group(['middleware' => 'auth'], function () {
         Route::get('/search','Admin\HistoryController@search');
     });
 
+    Route::group(['prefix'=>'tasks'], function(){
+        Route::get('/','Admin\TaskController@index');
+        Route::get('/search','Admin\HistoryController@search');
+    });
+
     Route::group(['prefix'=>'export'], function(){
         Route::get('/','Admin\DataController@indexExport');
         Route::get('/{credit_id}','Admin\DataController@export');

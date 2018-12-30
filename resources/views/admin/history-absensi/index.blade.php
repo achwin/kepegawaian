@@ -79,6 +79,7 @@ History Absensi Pegawai
                         <th>NIP</th>
                         <th>Nama</th>
                         <th>Jabatan</th>
+                        <th>Pekerjaan</th>
                         <th>Tanggal</th>
                         <th>Pukul</th>
                       </tr>
@@ -90,6 +91,7 @@ History Absensi Pegawai
                         <td>{{$d->nip}}</td>
                         <td>{{$d->employee->name}}</td>
                         <td>{{$d->employee->position->name}}</td>
+                        <td>{{$d->employee->pekerjaan}}</td>
                         <td>{{App\Helpers\GeneralHelper::indonesianDateFormat($d->tanggal)}}</td>
                         <td>{{$d->pukul}}</td>
                       </tr>
