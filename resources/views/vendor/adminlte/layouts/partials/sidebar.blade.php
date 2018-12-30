@@ -51,7 +51,7 @@
             {!! 'class="active"'!!}
             @endif
             >
-                <a href="{{ url('tasks') }}"><i class='fa fa-pencil'></i> <span>List Task</span></a>
+                <a href="{{ url('tasks') }}"><i class='fa fa-pencil'></i> <span>Task</span></a>
             </li>
             @endif
             <!-- <li
